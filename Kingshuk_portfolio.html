@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingshuk Datta - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for animations and font */
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        @keyframes fade-in-down {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-down {
+            animation: fade-in-down 0.8s ease-out forwards;
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 font-inter text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Kingshuk Datta</h1>
+            <ul class="flex space-x-6">
+                <li>
+                    <a href="#home" class="text-lg font-medium hover:text-blue-600 transition-colors duration-300 active-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="text-lg font-medium hover:text-blue-600 transition-colors duration-300">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects" class="text-lg font-medium hover:text-blue-600 transition-colors duration-300">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="text-lg font-medium hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8">
+            <div class="text-center">
+                <h2 class="text-5xl md:text-7xl font-extrabold mb-4 animate-fade-in-down">
+                    Hello, I'm Kingshuk Datta
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 animate-fade-in-up">
+                    A proactive, productive, and code-enthusiastic student.
+                </p>
+                <a
+                    href="#about"
+                    class="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-100 transition-all duration-300 transform hover:scale-105"
+                >
+                    Learn More About Me
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="container mx-auto py-16 px-8 bg-white shadow-lg rounded-lg my-12">
+            <h2 class="text-4xl font-bold text-center text-blue-700 mb-10">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Profile</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        A proactive, productive, and code-enthusiastic student at Notre Dame University Bangladesh
+                        with academic achievements and volunteering experience. Possess strong adaptivity to any
+                        environment and with communication skills in English, Hindi & Bangla. Focusing on quality
+                        productivity over quantity.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Education</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>
+                            <strong>BSc in Computer Science & Engineering</strong>
+                            <br>
+                            Notre Dame University Bangladesh | Arambagh, Dhaka (2022-Present)
+                        </li>
+                        <li>
+                            <strong>HSC in Science Background (GPA: 5.00)</strong>
+                            <br>
+                            Notre Dame College | Arambagh, Dhaka (2018-2020)
+                        </li>
+                        <li>
+                            <strong>SSC in Science Background (GPA: 5.00)</strong>
+                            <br>
+                            St. Gregory's High School & College | Luxmi-Bazar, Dhaka (2016-2018)
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Skills</h3>
+                    <div class="mb-6">
+                        <h4 class="text-xl font-medium text-gray-800 mb-2">Programming Languages:</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">C</span>
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Java</span>
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Python</span>
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">SQL database</span>
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">C++</span>
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">HTML</span>
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">CSS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-medium text-gray-800 mb-2">Day-to-day Software:</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Microsoft Word</span>
+                            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">PowerPoint</span>
+                            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Canva</span>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Hobbies</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Playing Guitar</li>
+                            <li>Drawing & Sketching</li>
+                            <li>Gaming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto py-16 px-8 bg-gray-50 shadow-lg rounded-lg my-12">
+            <h2 class="text-4xl font-bold text-center text-blue-700 mb-10">Projects & Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project/Achievement Card 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Project Show</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2024</p>
+                    <p class="text-gray-600">
+                        Participation in a university project show, demonstrating practical application of skills.
+                    </p>
+                </div>
+                <!-- Project/Achievement Card 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Arduino Innovation: Hands-on workshop for Beginners</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2024</p>
+                    <p class="text-gray-600">
+                        Attended and completed a hands-on workshop focused on Arduino for beginners.
+                    </p>
+                </div>
+                <!-- Project/Achievement Card 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Volunteer at 2nd Convocation</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2024</p>
+                    <p class="text-gray-600">
+                        Volunteered for the 2nd Convocation event, contributing to its successful execution.
+                    </p>
+                </div>
+                <!-- Project/Achievement Card 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Cyber Security Seminar</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2024</p>
+                    <p class="text-gray-600">
+                        Participated in a seminar dedicated to cyber security topics.
+                    </p>
+                </div>
+                <!-- Project/Achievement Card 5 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Gaming Competition (2nd rank)</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2022-2023</p>
+                    <p class="text-gray-600">
+                        Achieved 2nd rank in a gaming competition.
+                    </p>
+                </div>
+                <!-- Project/Achievement Card 6 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Executive Member of NDUBCC</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2022-Present</p>
+                    <p class="text-gray-600">
+                        Serving as an Executive Member of the Notre Dame University Bangladesh Computer Club.
+                    </p>
+                </div>
+                <!-- Project/Achievement Card 7 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Assistant Secretary of Media & Publication at NDUBCC</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2024-Present</p>
+                    <p class="text-gray-600">
+                        Holds the position of Assistant Secretary of Media & Publication at NDUBCC.
+                    </p>
+                </div>
+                <!-- Project/Achievement Card 8 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Musician at NDUBCC Cultural</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2022-Present</p>
+                    <p class="text-gray-600">
+                        Actively involved as a musician in the cultural activities of NDUBCC.
+                    </p>
+                </div>
+                <!-- Project/Achievement Card 9 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Global Mathematical Talent Probe (Rank 85th)</h3>
+                    <p class="text-gray-700 text-sm mb-4">Year: 2017-2018</p>
+                    <p class="text-gray-600">
+                        Achieved 85th rank in the Global Mathematical Talent Probe.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-10 text-center">
+                <p class="text-xl text-gray-700">
+                    For more of my projects, please visit my GitHub profile:
+                    <a
+                        href="https://github.com/kingshuk-datta"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-600 hover:underline font-semibold"
+                    >
+                        Kingshuk Datta's GitHub
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section id="contact" class="container mx-auto py-16 px-8 bg-white shadow-lg rounded-lg my-12 mb-20">
+            <h2 class="text-4xl font-bold text-center text-blue-700 mb-10">Contact Info</h2>
+            <div class="text-center space-y-6">
+                <p class="text-xl text-gray-700">
+                    <i class="fas fa-phone-alt mr-3 text-blue-600"></i>
+                    <strong>Phone No:</strong> +880-1670-039783
+                </p>
+                <p class="text-xl text-gray-700">
+                    <i class="fas fa-envelope mr-3 text-blue-600"></i>
+                    <strong>E-mail:</strong> kingshukdatta2001@gmail.com
+                </p>
+                <p class="text-xl text-gray-700">
+                    <i class="fab fa-linkedin mr-3 text-blue-600"></i>
+                    <strong>LinkedIn:</strong>
+                    <a
+                        href="https://www.linkedin.com/in/kingshuk-datta-1635542a9/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-600 hover:underline"
+                    >
+                        Kingshuk Datta
+                    </a>
+                </p>
+                <p class="text-xl text-gray-700">
+                    <i class="fab fa-github mr-3 text-blue-600"></i>
+                    <strong>GitHub:</strong>
+                    <a
+                        href="https://github.com/kingshuk-datta"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-600 hover:underline"
+                    >
+                        Kingshuk Datta
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6">
+        <p>&copy; <span id="current-year"></span> Kingshuk Datta. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+
+            // Function to update active link on scroll
+            const updateActiveLink = () => {
+                let currentActive = 'home';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 71; // Adjust for fixed header height + a little buffer
+                    const sectionBottom = sectionTop + section.offsetHeight;
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+                        currentActive = section.id;
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-blue-600');
+                    if (link.getAttribute('href').substring(1) === currentActive) {
+                        link.classList.add('text-blue-600');
+                    }
+                });
+            };
+
+            // Smooth scrolling for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70, // Adjust for fixed header
+                            behavior: 'smooth'
+                        });
+                        // Manually set active class immediately on click
+                        navLinks.forEach(l => l.classList.remove('text-blue-600'));
+                        this.classList.add('text-blue-600');
+                    }
+                });
+            });
+
+            // Update active link on page load and scroll
+            updateActiveLink(); // Initial call
+            window.addEventListener('scroll', updateActiveLink);
+        });
+    </script>
+</body>
+</html>
